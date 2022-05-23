@@ -4,7 +4,7 @@ public class Shapes {
 	public void area(int r)
 	{
 		
-		System.out.println("Area of circle:"+r);
+		System.out.println("Area of circle:"+r*r);
 	}
 	public void arear(int l, int b) {
 		System.out.println("Area of rectangle:"+(l*b));
