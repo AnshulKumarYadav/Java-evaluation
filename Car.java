@@ -22,9 +22,7 @@ class Engine{
 class Main{
 	public Main()
 	{
-		Car car = new Car();
-		car.model = "Harrier";
-		car.companyName = 
+		
 	}
 	public Main(String model,String companyName,String Color,Engine engine)
 	{

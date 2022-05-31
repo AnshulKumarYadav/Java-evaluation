@@ -1,30 +1,21 @@
 package com.eval1;
 
 public class Shapes {
-	public void area(int r)
+	public void area(Circle circle)
 	{
-		
-		System.out.println("Area of circle:"+r*r);
+		int r = circle.radius=7;
+		System.out.println("Area of circle:"+(22/7)*r*r);
 	}
-	public void arear(int l, int b) {
+	public void area(Rectangle rectangle) {
+		int l = rectangle.length=8;
+		int b = rectangle.breadth=7;
 		System.out.println("Area of rectangle:"+(l*b));
 	}
-	public void areas(int s) {
+	public void area(Square square) {
+		int s = square.side=46;
 		System.out.println("Area of square :"+s*s);
 	}
-	public static void main(String[] args) {
-		Circle circle = new Circle();
-		int r = circle.radius = 7;
-		Shapes shapes = new Shapes();
-		shapes.area(r);
-		Rectangle lbRectangle = new Rectangle();
-		int l = lbRectangle.length = 4;
-		int b =  lbRectangle.breadth=5;
-		shapes.arear(l,b);
-		Square sides= new Square();
-		int s= sides.side = 4;
-		shapes.areas(s);
-	}
+
 }
 class Circle{
 	int radius;
@@ -35,4 +26,14 @@ class Rectangle{
 }
 class Square{
 	int side;
+}
+
+class Main2{
+	public static void main(String[] args) {
+		Shapes shapes = new Shapes();
+		shapes.area(new Circle());
+		shapes.area(new Rectangle());
+		shapes.area(new Square());
+		
+	}
 }
